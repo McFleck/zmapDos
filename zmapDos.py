@@ -1,6 +1,5 @@
 import os
 import time
-import random
 
 
 ip = "0.0.0.0"

@@ -35,7 +35,7 @@ ip = input("Target ip: ")
 
 if spoof == "":
  while i <= 2:
-  os.system("zmap -i "+ extension +" -S 85.118.181.8 -B 10G -p 80 -T 10 -P 10 "+ ip +"/16")
+  os.system("zmap -i "+ extension +" -B 10G -p 80 -T 10 -P 10 "+ ip +"/16")
   time.sleep(5)
 
 else:
